@@ -1,0 +1,3 @@
+CREATE TABLE data (
+  id NUMERIC PRIMARY KEY
+);

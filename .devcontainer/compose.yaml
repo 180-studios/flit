@@ -1,0 +1,15 @@
+services:
+  dev:
+    image: mcr.microsoft.com/devcontainers/go:1.24
+    environment:
+      MYSQL_HOME: /workspaces/filament/.devcontainer/mysql-home
+      TEST_MYSQL_DSN: root:root@tcp(mysql:3306)/flit
+    command: sleep infinity
+    volumes:
+      - ../..:/workspaces:cached
+
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_DATABASE: flit
+      MYSQL_ROOT_PASSWORD: root

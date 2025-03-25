@@ -1,0 +1,6 @@
+{
+	"name": "Flit",
+  "service": "dev",
+	"dockerComposeFile": "compose.yaml",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+}
